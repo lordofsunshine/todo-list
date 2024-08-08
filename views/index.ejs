@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ToDo - Manage your tasks efficiently">
+    <meta name="keywords" content="ToDo, tasks, productivity, list">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="6" height="6" x="3" y="5" rx="1"/><path d="m3 17l2 2l4-4m4-9h8m-8 6h8m-8 6h8"/></g></svg> ToDo</div>
+          <nav class="navbar">
+            <div class="close-icon" id="close-icon">&times;</div> <!-- Added this line -->
+              <ul class="nav-links" id="navlinks">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="/login">Login</a></li>
+                  <li><a href="/register">Register</a></li>
+              </ul>
+              <div class="hamburger" id="hamburger">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+              </div>
+          </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="home" id="home">
+            <h1>Welcome to ToDo</h1>
+            <p>Manage your tasks efficiently and stay productive.</p>
+          <a class="start-btn" href="/panel">Get Started</a>
+          <img class="home-img" src="/banner.jpg">
+        </section>
+    </main>
+
+    <footer>
+        <div style="width: 100%;" class="container">
+            <p class="footer-copyright">&copy; 2024 ToDo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>
