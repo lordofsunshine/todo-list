@@ -13,11 +13,28 @@
     <div class="auth-form register-form">
       <h2>Register</h2>
       <form action="/register" method="POST">
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="password" name="password" placeholder="Password" required>
+        <div class="input-form">
+        <label>
+            <span class="span-form">Username</span>
+        </label>
+        <input type="text" name="username" maxlength="24" placeholder="Enter your username" required>
+          </div>
+        <div class="input-form">
+          <label>
+            <span class="span-form">Email</span>
+          </label>
+        <input type="email" name="email" placeholder="Enter your email address" required>
+          </div>
+        <div class="input-form">
+          <label>
+            <span class="span-form">Password</span>
+          </label>
+        <input type="password" name="password" placeholder="Enter your password" required>
+          </div>
         <button type="submit">Register</button>
+        <div class="register-link">
         <p>Already have an account? <a href="/login">Login</a></p>
+          </div>
       </form>
     </div>
   </div>

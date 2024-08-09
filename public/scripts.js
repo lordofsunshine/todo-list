@@ -141,10 +141,9 @@ function updateTaskListVisibility() {
   const taskList = document.getElementById('task-list');
   const nothingText = document.querySelector('.nothing');
 
-  // Проверяем, что элементы существуют
   if (taskList && nothingText) {
     nothingText.style.display = taskList.children.length === 0 ? 'block' : 'none';
   } else {
-    console.error('Не удалось найти элементы для обновления видимости задачи.');
+    console.error('The elements for updating the visibility of the task could not be found.');
   }  
 }

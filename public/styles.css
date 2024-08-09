@@ -278,10 +278,10 @@ header h1 {
 
 .auth-form input {
     width: -webkit-fill-available;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 10px;
+    padding: 4px 8px;
+    border: 0;
+    font-size: 15px;
+    margin: 0;
 }
 
 .auth-form button {
@@ -584,4 +584,42 @@ form input, form textarea, form select, form button {
   user-select: none;
   letter-spacing: 4.5px;
   text-align: center;
+}
+
+input[type="email"], input[type="password"] {
+  outline: none;
+  box-shadow: none; 
+  }
+
+input[type="email"]:hover,
+input[type="email"]:focus, input[type="password"]:hover,
+input[type="password"]:focus {
+  border-color: initial; 
+  box-shadow: none; 
+  background-color: initial;
+}
+
+.login-link {
+  display: block;
+  text-align: start;
+}
+
+.register-link {
+  text-align: center;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+}
+
+.span-form {
+  display: block;
+  text-align: start;
+  margin: 4px 8px;
+  font-size: 14px;
+}
+
+.input-form {
+    border: 1px solid #ddd;
+    padding: 4px 2px;
+    border-radius: 6px;
+    margin-bottom: 10px;
 }
